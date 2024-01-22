@@ -1,4 +1,7 @@
-def call() {
-  sh 'rm -rf bus_booking'
-  sh 'git clone https://github.com/Ahmsagar401/bus_booking.git'
+def call(){
+    echo "Building java project & ${name}"
+    sh '''
+      rm -rf bus_booking
+      git clone https://github.com/Ahmsagar401/bus_booking.git
+    '''
 }
