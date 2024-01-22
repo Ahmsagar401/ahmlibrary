@@ -1,6 +1,6 @@
-def call(){
+def call(String name = 'value'){
+    echo "Building java project & ${name}"
     sh '''
-      mvn --version
-      mvn clean install
+      mvn clean ${name}
     '''
 }
